@@ -1,0 +1,1 @@
+Example 4 is an unfinished example (technically 2 different examples), a basic example using the ncclient python module to get the running configuration of a Cisco XR device via NETCONF and the other example showing SSH with a C# console application.

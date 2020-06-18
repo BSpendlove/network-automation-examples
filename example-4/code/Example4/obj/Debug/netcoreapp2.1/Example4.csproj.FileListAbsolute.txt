@@ -1,0 +1,11 @@
+C:\Users\Brandon\Desktop\Github Projects\network-automation-examples\example-4\code\Example4\bin\Debug\netcoreapp2.1\Example4.deps.json
+C:\Users\Brandon\Desktop\Github Projects\network-automation-examples\example-4\code\Example4\bin\Debug\netcoreapp2.1\Example4.runtimeconfig.json
+C:\Users\Brandon\Desktop\Github Projects\network-automation-examples\example-4\code\Example4\bin\Debug\netcoreapp2.1\Example4.runtimeconfig.dev.json
+C:\Users\Brandon\Desktop\Github Projects\network-automation-examples\example-4\code\Example4\bin\Debug\netcoreapp2.1\Example4.dll
+C:\Users\Brandon\Desktop\Github Projects\network-automation-examples\example-4\code\Example4\bin\Debug\netcoreapp2.1\Example4.pdb
+C:\Users\Brandon\Desktop\Github Projects\network-automation-examples\example-4\code\Example4\obj\Debug\netcoreapp2.1\Example4.csprojAssemblyReference.cache
+C:\Users\Brandon\Desktop\Github Projects\network-automation-examples\example-4\code\Example4\obj\Debug\netcoreapp2.1\Example4.csproj.CoreCompileInputs.cache
+C:\Users\Brandon\Desktop\Github Projects\network-automation-examples\example-4\code\Example4\obj\Debug\netcoreapp2.1\Example4.AssemblyInfoInputs.cache
+C:\Users\Brandon\Desktop\Github Projects\network-automation-examples\example-4\code\Example4\obj\Debug\netcoreapp2.1\Example4.AssemblyInfo.cs
+C:\Users\Brandon\Desktop\Github Projects\network-automation-examples\example-4\code\Example4\obj\Debug\netcoreapp2.1\Example4.dll
+C:\Users\Brandon\Desktop\Github Projects\network-automation-examples\example-4\code\Example4\obj\Debug\netcoreapp2.1\Example4.pdb
