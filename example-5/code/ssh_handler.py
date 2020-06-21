@@ -54,7 +54,7 @@ class CiscoExample5:
                 "vlan_name": vlan[1] #1 will always be VLAN Name in Cisco IOS
             })
 
-        #Try to avoid when possibly, hardcoding values like the above example...
+        #Try to avoid when possible, hardcoding values like the above example...
         return vlans
 
     def check_vlan_exist(self, vlan_id):
