@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+	<div class="row">
+        <div class="col-md-9 ml-2 p-4">
+			<h2 class="text-primary">Users</h2>
+		</div>
+    </div>
+    <div class="col-sm-6">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Username</th>
+                <th scope="col">Password</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <th>{{ user.id }}</th>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.password }}
+                    <!--
+                    <a href="{{ url_for('users.delete_user', id=user.id) }}" class="btn btn-xs btn-danger float-right" title="Delete User"><i class="fas fa-times" aria-hidden="true"></i></a>
+                    <a href="" class="btn btn-xs btn-warning float-right" title="Edit User"><i class="far fa-edit" aria-hidden="true"></i></a>
+                    -->
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+          <a class="btn btn-success float-right" href="{{ url_for('users.add_user') }}" role="button">Add User</a>
+    </div>
+</div>
+{% endblock %}

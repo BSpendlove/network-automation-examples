@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+	<div class="row">
+        <div class="col-md-9 ml-2 p-4">
+			<h2 class="text-primary">Devices</h2>
+		</div>
+    </div>
+    <div class="col-sm-6">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Friendly Name</th>
+                <th scope="col">IP</th>
+                <th scope="col">Netmiko Driver</th>
+                <th scope="col">User</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for device in devices %}
+                <tr>
+                    <th>{{ device.id }}</th>
+                    <td>{{ device.friendly_name }}</td>
+                    <td>{{ device.ip }} </td>
+                    <td>{{ device.netmiko_driver }} </td>
+                    <td>{{ device.user.username }} <a href="{{ url_for('devices.view_device', id=device.id) }}" class="btn btn-xs btn-warning float-right" title="View Device"><i class="far fa-edit" aria-hidden="true"></i></a></td>
+                    <!--
+                    <a href="{{ url_for('devices.delete_device', id=device.id) }}" class="btn btn-xs btn-danger float-right" title="Delete Device"><i class="fas fa-times" aria-hidden="true"></i></a>
+                    <a href="" class="btn btn-xs btn-warning float-right" title="Edit Device"><i class="far fa-edit" aria-hidden="true"></i></a>
+                    -->
+                </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+          <a class="btn btn-success float-right" href="{{ url_for('devices.add_device') }}" role="button">Add Device</a>
+    </div>
+</div>
+{% endblock %}

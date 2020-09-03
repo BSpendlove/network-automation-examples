@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+<!--
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.friendly_name.label }}<br>
+        {{ form.friendly_name(size=32) }}
+    </p>
+    <p>
+        {{ form.ip.label }}<br>
+        {{ form.ip(size=32) }}
+    </p>
+    <p>
+        {{ form.netmiko_driver.label }}<br>
+        {{ form.netmiko_driver(size=32) }}
+    </p>
+    <p>
+        {{ form.authentication_user.label }}<br>
+        {{ form.authentication_user(size=32) }}
+    </p>
+    <p>{{ form.submit() }}</p>
+
+</form>
+-->
+<div class="container-fluid ml-2 p-4">
+    <h1>Add Device</h1>
+    <div class="row">
+        <div class="col-sm-3 ">
+            {{ wtf.quick_form(form) }}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,51 @@
+<head>
+  <title>
+    <title>{% block title %}{%endblock%} - Example8</title>
+  </title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+
+{% block navbar %}
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+        <a class="navbar-brand" href="{{ url_for('index.main') }}">Example8 Demo</a>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('users.index')}}">Users</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('devices.index')}}">Devices</a>
+        </li>
+        </ul>
+</nav>
+{% endblock %}
+
+
+<body>
+    {% block body %}
+	<div class="main">
+		<div class="container-fluid">
+			{% with messages = get_flashed_messages() %}
+			{% if messages %}
+				{% for message in messages %}
+				<div class="alert alert-info" role="alert">{{ message }}</div>
+				{% endfor %}
+			{% endif %}
+			{% endwith %}
+
+			{% block content %}
+			{% endblock %}
+		</div>
+	</div>
+
+	<script src="{{ url_for('static', filename='js/jquery.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" type="text/javascript"></script>
+
+	{% block scripts %}{% endblock %}
+    {% endblock %}
+</body>
+
+</html>

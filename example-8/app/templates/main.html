@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-9 ml-2 p-4">
+			<h2 class="text-primary">Dashboard</h2>
+		</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="card p-4">
+                <h5 class="card-title">Total Users</h5>
+                <div class="card-body">
+                    <h4>{{ total_users }}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card p-4">
+                <h5 class="card-title">Total Devices</h5>
+                <div class="card-body">
+                    <h4>{{ total_devices }}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
