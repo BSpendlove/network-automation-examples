@@ -1,0 +1,3 @@
+Example-8 demonstrates a basic example with a flask frontend app, sqlite database (using SQLAlchemy so we can play with Python Objects) and a small part of Netmiko. We handle basic frontend forms with Flask WTF and store some basic details for a radius/tacacs username and password (in the example, it's stored as cleared text which should never be deployed in production) and connection details to a device which Netmiko will pull very basic facts from the device.
+
+Instead of using a vendors API or some classic techniques such as Regex or TextFSM templates, we will simply be using string slicing and spliting to gain the required information to populate our database fields.
