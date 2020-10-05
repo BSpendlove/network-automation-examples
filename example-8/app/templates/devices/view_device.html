@@ -67,7 +67,9 @@
             <ul class="nested">
           {% for entry in folder_structure %}
             {% if entry["type"] == "folder" %}
+              {% if entry["children"] %}
               <li><i class="fas fa-angle-right rotate"></i>
+              {% endif %}
                 <span><i class="far fa-calendar-alt ic-w mx-1"></i>{{ entry["name"] }}</span>
                 {% if entry["children"] %}
                   <ul class="nested">

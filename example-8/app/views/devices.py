@@ -66,8 +66,9 @@ def view_device(id):
         "status": "Active"
     }]
 
+    config = None
+
     if request.method == "POST":
-        config = None
         if "get_config" in request.form:
             ssh = Example8SSH(device.ip, device.user.username, device.user.password, device.user.password, device.netmiko_driver)
             ssh.connect()

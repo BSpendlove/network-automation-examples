@@ -1,0 +1,9 @@
+Value INTERFACE (\S+)
+Value STATE (up|down|admin-down)
+Value LINE_STATE (up|down|admin-down)
+Value ENCAPSULATION (\S+)
+Value MTU (\d+)
+Value BANDWIDTH (\d+)
+
+Start
+  ^\s+${INTERFACE}\s+${STATE}\s+${LINE_STATE}\s+${ENCAPSULATION}\s+${MTU}\s+${BANDWIDTH} -> Record
